@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi! My name is Jordan. I currently live in Kansas City (on the Missouri side). At the beginning of January, I'm starting [Hack Reactor] (www.hackreactor.com), a three-month long coding bootcamp, after which I'll start looking for software engineering jobs in my area.
 
-### More Information
+While I'm doing Hack Reactor, my two cats Julius and Franklin will keep me company. Or rather, they'll try to distract me. It's how they show love. 
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jordanmurphy11@gmail.com](mailto:jordanmurphy11@gmail.com)
