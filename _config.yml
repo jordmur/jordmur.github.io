@@ -10,7 +10,7 @@ description: Software Engineer In-Training
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://github.com/jordmur/jordmur.github.io/blob/master/images/profilepic.JPG?raw=true
-
+excerpt_separator: "\n\n"
 #
 # Flags below are optional
 #
