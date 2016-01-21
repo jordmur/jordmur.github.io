@@ -5,7 +5,7 @@ title: Constructor Functions and Constructor Properties
 So, I'm knee deep in the beautiful mud of learning, and as any learner can attest, I've run into my share of challenging concepts that cause my brain to stutter. One such topic: constructors.
 
 ##What is a Constructor?
-When working with class instantiation, I ran into a couple references to constructors. Initially, I felt like I understood constructors as well as most other javascript concepts, which is to say, I would have bumbled around a bit, lost my words mid-sentence, but overall, known what I was discussing. So what did I think a constructor was? Simply stated, a constructor is a function that creates a new instance of a class. I can follow that. EZ-PZ.
+When working with class instantiation, I ran into a couple references to constructors. Initially, I thought I understood constructors as well as most other javascript concepts, which is to say, I would have bumbled around a bit, lost my words mid-sentence, but overall, known what I was discussing. So what did I think a constructor was? Simply stated, a constructor is a function that creates a new instance of a class. I can follow that. EZ-PZ.
 Here's an example of a basic constructor function (in the pseudoclassical instantiation style):
 
 ```javascript
