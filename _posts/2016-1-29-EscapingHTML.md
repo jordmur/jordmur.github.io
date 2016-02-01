@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Implement Escaping Characters in JavaScript
+title: How to Implement HTML Escaping Using JavaScript
 ---
 I recently built a simple chat client (I know, I'm recreating late '90's tech!) and in order to make my chat application safer, I needed to prevent XSS attacks using HTML escaping. To start, I had no idea what the frack an XSS attack was, much less how to utilize HTML escaping to prevent one.
 
