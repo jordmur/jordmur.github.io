@@ -3,7 +3,7 @@ layout: post
 title: Getting Started With Gulp
 ---
 
-Gulp.js is a powerful javascript task-runner which many view as the successor of respected colleague Grunt.js. For those new to task-runners and their ecosystems, task-runners allow you to easily run repetitious tasks such as concatenating files, minifying them, uglifying them, preprocessoer compiling, removing unused CSS, code linting and much more.
+Gulp.js is a powerful javascript task-runner which many view as the successor of respected colleague Grunt.js. For those new to task-runners and their ecosystems, task-runners allow you to easily run repetitious tasks such as concatenating files, minifying them, uglifying them, preprocessor compiling, removing unused CSS, code linting and much more.
 
 ##It Looks Difficult
 
