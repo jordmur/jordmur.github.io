@@ -6,7 +6,7 @@
 name: Jordan D. Murphy
 
 # Short bio or description (displayed in the header)
-description: Software Engineer In-Training
+description: Software Engineer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: "./images/profilepic.JPG"
@@ -53,7 +53,7 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: kramdown
+markdown: github
 highlighter: rouge
 permalink: /:title/
 
