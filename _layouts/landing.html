@@ -8,7 +8,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link href='https://fonts.googleapis.com/css?family=Sanchez|Questrial' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -16,20 +16,19 @@
   </head>
 
   <body>
-    <div>
-      'Hi, what's up?'
+    <div class="grid landing-container">
+      <div class="grid__col grid__col--3-of-5 grid__col--centered">
+        <p>I'm Jordan D. Murphy</p>
+        <p>Front-End Developer. Writer. Midwesterner.</p>
+        <p>Check out my portfolio, blog posts, resume, or learn a bit more <a href="{{ site.baseurl }}/about">about me</a></p>
+      </div>
+      <!-- <div class="grid__col grid__col--3-of-5 grid__col--push-1-of-5">
+        <p>Push and pull columns in plain English.</p>
+      </div> -->
     </div>
 
     <div id="main" role="main" class="container">
       {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
     </div>
 
     {% include analytics.html %}

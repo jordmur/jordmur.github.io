@@ -280,6 +280,22 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  height: 10vh;
+}
+
+// Landing Page Stuff
+.landing-container {
+  background-image: url(./images/stardust.png);
+  color: $landingText;
+  font-family: 'Open Sans';
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 1em;
+  overflow: auto;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

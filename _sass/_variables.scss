@@ -26,6 +26,12 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
+/* RGB */
+$color1: rgba(27, 38, 79, 1);
+$landingAccent: rgba(215, 38, 56, 1);
+$landingText: rgba(255, 255, 255, 1);
+$landingBack: rgba(23, 29, 28, 1);
+$color5: rgba(34, 51, 59, 1);
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
