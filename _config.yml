@@ -79,3 +79,9 @@ exclude:
     - CNAME
 # Include pages directory
 include: ["_pages"]
+
+# Attempt at setting up for portfolio
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/

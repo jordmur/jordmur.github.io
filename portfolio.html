@@ -1,0 +1,16 @@
+---
+layout: page
+title: Portfolio
+permalink: /portfolio/
+---
+<div class="portfolios">
+  {% for portfolio in site.portfolio %}
+  <div class="single-portfolio">
+    <h2>Project: {{ portfolio.title }}</h2>
+    <p>What is it?:  {{ portfolio.description }}</p>
+    <p>See the app in action  :</p><a href="{{ portfolio.link }}">{{ portfolio.link }}</a> <br />
+    <p>Github:  </p> <a href="{{ portfolio.githubLink }}">{{ portfolio.githubLink }}</a> <br />
+    <img src="{{ portfolio.image }}" />
+  </div>
+  {% endfor %}
+</div>
