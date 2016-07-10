@@ -19,7 +19,6 @@ html {
 }
 
 body {
-	background: $white;
   font: 18px/1.4 $body-font;
   color: black;
 }
@@ -152,7 +151,7 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-color: $mastheadBackground;
+  background-image: $starbackground;
 }
 
 .masthead {
@@ -192,9 +191,9 @@ img {
 
 .site-name {
   margin: 0;
-  color: $mainColor;
+  color: $white;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $header-font;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -202,7 +201,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
@@ -215,7 +214,7 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $header-font;
   font-size: 18px;
-  color: $lighterMainColor;
+  color: $white;
 
   @include mobile {
     float: none;
@@ -226,13 +225,13 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $accentColorSecondary;
+    color: $landingAccent;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
     @include mobile {
       margin: 0 10px;
-      color: $accentColorSecondary;
+      color: $landingAccent;
     }
   }
 }
@@ -252,6 +251,7 @@ nav {
 }
 
 .post {
+  background: $white;
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $accentColorMain;
@@ -274,7 +274,7 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  background-color: $mastheadBackground;
+  background-image: $starbackground;
 }
 
 footer {
@@ -285,7 +285,7 @@ footer {
 
 // Landing Page Stuff
 .landing-container {
-  background-image: url(./images/stardust.png);
+  background-image: $starbackground;
   color: $landingText;
   font-family: 'Open Sans';
   text-align: center;
@@ -296,14 +296,30 @@ footer {
   height: 100vh;
   padding: 1em;
   overflow: auto;
-  // p {
-  //   background-color: $mainColor;
-  //   border-radius: 5px;
-  // }
   a {
     text-decoration: underline;
-    color: #FFEA00;
+    color: $landingAccent;
   }
+}
+
+// Portfolio Container
+.portfolio-body {
+  background-image: $starbackground;
+}
+
+.portfolios {
+  margin: 20px;
+  border-top: 5px white;
+}
+
+.single-portfolio {
+  margin: 10px;
+  background: #fff;
+  border-radius: 2px;
+  // display: inline-block;
+  // margin: 1rem;
+  // position: relative;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
