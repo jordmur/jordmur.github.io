@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: portfolio
 title: Portfolio
 permalink: /portfolio/
 ---
-<div class="portfolios">
+<div class="portfolios grid">
   {% for portfolio in site.portfolio %}
-  <div class="single-portfolio">
+  <div class="single-portfolio grid__col grid__col--1-of-3">
     <h2>Project: {{ portfolio.title }}</h2>
     <p>What is it?:  {{ portfolio.description }}</p>
     <p>See the app in action  :</p><a href="{{ portfolio.link }}">{{ portfolio.link }}</a> <br />
