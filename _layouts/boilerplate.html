@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jordan Murphy: Developer and Writer</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!-- TODO: Remove the second of these later -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sanchez|Questrial' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -16,14 +18,8 @@
   </head>
 
   <body>
-    <div class="grid landing-container">
-      <div class="grid__col grid__col--3-of-5 grid__col--centered">
-          <p>I'm Jordan D. Murphy.<br />
-          Front-End Developer + Writer.<br />
-          Here's my <a href="{{ site.baseurl }}/portfolio">portfolio</a> // <a href="{{ site.baseurl }}/blog">blog posts</a> // <a>resume</a> // or learn a bit more <a href="{{ site.baseurl }}/about">about me.</a></p>
-      </div>
-    </div>
 
+    {{ content }}
     {% include analytics.html %}
   </body>
 </html>
