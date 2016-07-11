@@ -6,7 +6,7 @@ permalink: /portfolio/
 <div class="portfolios grid">
   {% for portfolio in site.portfolio %}
   <div class="single-portfolio grid__col--3-of-5 grid__col--centered grid__col">
-    <img src="{{ portfolio.image }}" />
+    <img src="{{ site.baseurl }}/{{ portfolio.image }}" />
     <h2>{{ portfolio.title }}</h2>
     <p>{{ portfolio.description }}</p>
     To learn more, you can:

@@ -15,3 +15,5 @@ In my free time, I write humorous science-fiction (think Douglas Adams, Kurt Von
 ### Contact me
 
 [jordanmurphy11@gmail.com](mailto:jordanmurphy11@gmail.com)
+
+You can also find my resume [here]({{site.baseurl}}/JordanMurphySiteResume.pdf).
