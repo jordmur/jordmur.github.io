@@ -8,7 +8,7 @@ After a bit of research, I learned that an XSS attack, or cross-site scripting i
 
 In my project, my peers attempted to "hack" my chat client by sending user messages (which the chat client received via AJAX). If one of those comments was simply: “hey what’s up Jordan, you’re the coolest dude that lives in your house”, then that would render on the website easily enough. However, if the comment contained a script tag, like this: `<script src=‘dobad stuff’> </script>`, what would happen?
 
-##The Bad News
+## The Bad News
 If the JavaScript didn’t escape the HTML, that script would have run on my page. There are lots of forms this specific script injection could take, and I won’t endeavor to describe them in detail. Check out [OWASP](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) for an in-depth analysis on the most common types of script attacks. Suffice to say, it's easy to visualize how such a script could harm other users loading that message, potentially grabbing vital information from their client via cookies and other mechanisms.
 
 Real quick, here is what this might look at (first with an error-free example):
@@ -30,12 +30,12 @@ Here's what that does in a page which has jQuery loaded:
 
 Because I didn't escape the `badUserComment`, when JavaScript (in this case, using jQuery) attempts to append the comment to the body, it ends up executing the code. Right now, the `badUserComment` console logs an innocuous comment, but it's easy to ease how this technique might be used to execute much more malicious attacks.
 
-##HTML Escaping to the Rescue
+## HTML Escaping to the Rescue
 In order to prevent this specific type of attack, you need to properly escape certain characters of the content that is going to be added to the DOM. As a refresher, most programming languages allow for escaping characters that might cause hangups for the interpreter. In JavaScript, I could escape a new line in a string by adding `/n` so that the new line appears where intended. `'Q:Hi, how are you Susy? /n A:I am fine'`. To learn more about what characters need escaping in JavaScript in order for JavaScript to behave as expected, check out the [Mozilla Developer Network](https://msdn.microsoft.com/en-us/library/2yfce773(v=vs.94).aspx).
 
 Okay, so how does this work when putting HTML in the DOM? I googled around a bit, and after crawling through too many pages with incomplete answers, I figured out how HTML escaping works.
 
-##The Nitty, the Gritty, Welcome to Escape City
+## The Nitty, the Gritty, Welcome to Escape City
 
 In order to prevent this attack, the HTML being added to the page needs to be escaped for certain characters in a similar way as JavaScript. Since we are using JavaScript to process the content we are adding to the DOM, we can first run a regex test which checks if any characters in the content to be added matches one of the most common offenders hackers use for XSS attacks. The frequently used characters that need to be tested for are: `<`, `>`, `'`, `"`, and `&`, and many would argue you should escape any characters with a character code above 127 (meaning everything that isn't a normal letter or number). Then you replace those characters with their HTML URL encoded equivalent. For ampersand, this would be `&amp`, for `<` this is `&lt`, so on and so forth.
 

@@ -5,11 +5,11 @@ title: Getting Started With Gulp
 
 Gulp.js is a powerful javascript task-runner which many view as the successor of respected colleague Grunt.js. For those new to task-runners and their ecosystems, task-runners allow you to easily run repetitious tasks such as concatenating files, minifying them, uglifying them, preprocessor compiling, removing unused CSS, code linting and much more.
 
-##It Looks Difficult
+## It Looks Difficult
 
 When I first dipped my fingers into the node ecosystem, I wanted to know how to use Gulp because it seemed to simplify many developmental pain points. However, I worried about the amount of work required to get started. Earlier this week, I set up the basic Gulpfile.js for a team project, and I'm glad to say that process was incredibly easy - more so than my prior Grunt experience. For those interested, I would say jump in. The water's warm. I promise.
 
-##Requirements
+## Requirements
 
 Gulp requires Node, so you'll want that installed on your machine. Secondly, you need a package.json in your project folder, which you can create by running `npm init` from the root of your directory and following the fairly self-explanatory prompts. Once you done that, you need to figure out which Gulp tasks you're hoping to run. Check out the [Gulp website](http://gulpjs.com/), specifically the plugin section. A bit of scrolling there will likely turn up a few plugins to get you started.
 
@@ -17,7 +17,7 @@ For me, I used the gulp-sass plugin (for compiling scss files into valid css), a
 
 As for installing the modules, you will want to run `npm install gulp-modulename --save-dev`, where `modulename` is the module you're going to install. The `--save-dev` prefix installs the module in a specific section in the package.json which indicates that this module is used for development purposes, rather than what you want to deploy to the server.
 
-##And Now For the Gulpfile
+## And Now For the Gulpfile
 
 Next, you'll want to create a file in your project's root directory titled Gulpfile.js.
 

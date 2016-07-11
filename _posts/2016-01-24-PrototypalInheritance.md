@@ -19,7 +19,7 @@ var monsterTruck = new Truck('Infinite', 8);
 
 For most JavaScripters, this pattern will make sense, and is widely documented across the internet. However, how the pattern behaves under the hood is not as clear. After all, JavaScript is clearly doing something behind the scenes with the keyword `new` in order to return an object from the `Truck` function since we aren't returning anything from that function. Attempting to instantiate `monsterTruck` without the keyword new will cause `monsterTruck` to log as undefined.
 
-##What the Keyword New Does
+## What the Keyword New Does
 
 The keyword `new` tells the JavaScript interpreter to add a few lines of code to the Truck function when it operates. These lines create a `this` object (after which our function assigns two key-value pairs) and then, at the end of function, returns the newly created this object. I've refactored `Truck` to take into account these new lines of code.
 
@@ -34,7 +34,7 @@ var Truck = function(awesomeness, wheels){
 }
 ```
 
-##Avoiding New Altogether
+## Avoiding New Altogether
 
 Learning how JavaScript operates on a nuanced level is valuable for a JavaScript programmer. Although seeing how `new` operates might not change day-to-day operations, it builds depth of understanding in regards to the prototype chain, which should be welcome to any serious developer. However, the keyword `new` can be avoided altogether. Meet prototypal inheritance. Prototypal inheritance behaves similarly to pseudoclassical, but is more explicit about how it instantiates classes.
 
