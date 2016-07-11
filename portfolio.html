@@ -5,12 +5,12 @@ permalink: /portfolio/
 ---
 <div class="portfolios grid">
   {% for portfolio in site.portfolio %}
-  <div class="single-portfolio grid__col grid__col--1-of-3">
-    <h2>Project: {{ portfolio.title }}</h2>
-    <p>What is it?:  {{ portfolio.description }}</p>
-    <p>See the app in action  :</p><a href="{{ portfolio.link }}">{{ portfolio.link }}</a> <br />
-    <p>Github:  </p> <a href="{{ portfolio.githubLink }}">{{ portfolio.githubLink }}</a> <br />
+  <div class="single-portfolio grid__col--3-of-5 grid__col--centered grid__col">
     <img src="{{ portfolio.image }}" />
+    <h2>{{ portfolio.title }}</h2>
+    <p>{{ portfolio.description }}</p>
+    <p>See the app in action <a href="{{ portfolio.link }}"> here!</a> </p>
+    <p>Or check out the <a href="{{ portfolio.githubLink }}"> code.</a> </p>
   </div>
   {% endfor %}
 </div>

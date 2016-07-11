@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
-  color: $accentColorMain;
+  color: $mainColor;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -68,11 +68,12 @@ p {
 }
 
 a {
-  color: $landingAccent;
+  color: $mainColor;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $accentColorMain;
+    color: $white;
+    background: $mainColor;
   }
 }
 
@@ -116,17 +117,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $mainColor;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $mastheadBackground;
-  background: $lighterMainColor;
+  color: $white;
+  background: $mainColor;
 }
 ::selection {
-  color: $mastheadBackground;
-  background: $lighterMainColor;
+  color: $white;
+  background: $mainColor;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -242,7 +243,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $accentColorMain;
+  border-bottom: 1px solid $mainColor;
 }
 
 .posts > .post:last-child {
@@ -254,7 +255,7 @@ nav {
   background: $white;
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $accentColorMain;
+    border-left: 2px solid $mainColor;
     padding: 0.1em 1em;
     color: $gray;
     font-size: 22px;
@@ -268,7 +269,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
-    color: $accentColorMain;
+    color: $mainColor;
   }
 }
 
@@ -305,20 +306,18 @@ footer {
 // Portfolio Container
 .portfolio-body {
   background-image: $starbackground;
+  // background-color: $mainColor;
 }
 
 .portfolios {
-  margin: 20px;
-  border-top: 5px white;
+  margin: 2rem;
 }
 
 .single-portfolio {
-  margin: 10px;
+  padding: 20px;
+  margin-bottom: 2rem;
   background: #fff;
   border-radius: 2px;
-  // display: inline-block;
-  // margin: 1rem;
-  // position: relative;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
