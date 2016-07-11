@@ -9,8 +9,11 @@ permalink: /portfolio/
     <img src="{{ portfolio.image }}" />
     <h2>{{ portfolio.title }}</h2>
     <p>{{ portfolio.description }}</p>
-    <p>See the app in action <a href="{{ portfolio.link }}"> here!</a> </p>
-    <p>Or check out the <a href="{{ portfolio.githubLink }}"> code.</a> </p>
+    To learn more, you can:
+    <ul>
+      <li>See the app in action <a href="{{ portfolio.link }}"> here!</a> </li>
+      <li>Or check out the <a href="{{ portfolio.githubLink }}"> code.</a> </li>
+    </ul>
   </div>
   {% endfor %}
 </div>
